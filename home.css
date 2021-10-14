@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: "Lato", sans-serif;
+  color: #fffff;
+  line-height: 1.6;
+}
+
+ul{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+h1, h2{
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+img{
+  width: 100%;
+}
+
+
+/*NAVBAR*/
+.navbar{
+  background-color: #458FE8;
+  color: #fff;
+  height: 70px;
+}
+
+.navbar ul{
+  display: flex;
+}
+
+.navbar a{
+  color: #fff;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.navbar a:hover{
+  background-color: #076AE0;
+  border-bottom: 2px #fff solid;
+}
+
+.navbar .flex{
+  justify-content: space-between;
+}
+
+
+/*SHOWCASE*/
+.showcase{
+  height: 400px;
+  background-color: #458FE8;
+  color: #fff;
+  position: relative;
+}
+
+.showcase h1{
+  font-size: 40px;
+}
+
+.showcase p{
+  margin: 20px 0;
+}
+
+.showcase .grid{
+  grid-template-columns: 55% 45%;
+  gap: 50px;
+  overflow: visible;
+}
+
+.showcase .form{
+  position: relative;
+  top: 60px;
+  height: 350px;
+  width: 400px;
+  z-index: 100;
+}
+
+
+/*ICONE*/
+
+.icone{
+  margin-top: 100px;
+}
+
+.icone img{
+  width: 170px;
+  height: auto;
+}
+
+.icone div{
+  margin: 30px;
+  padding: 15px;
+  transition: 0.5s;
+}
+
+.icone div:hover{
+  transform: scale(1.1) translateY(-5px);
+}
+
+
+/*UTILITIES*/
+.container{
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card{
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+}
+
+.card-2{
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+}
+
+.btn{
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: #076AE0;
+  color: #fff;
+  border: 1px #fff solid;
+  border-radius: 5px;
+}
+
+.btn:hover{
+  background: #fff;
+  color: #076AE0;
+  border: 1px #076AE0 solid;
+  transform: scale(0.9);
+}
